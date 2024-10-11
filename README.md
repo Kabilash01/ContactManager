@@ -1,32 +1,33 @@
-# Contact Manager
+# ContactManager14
 
-Contact Manager is a simple and intuitive application for managing personal and professional contacts. This project is built with Java and provides basic CRUD (Create, Read, Update, Delete) functionality to manage contacts efficiently.
+ContactManager14 is a simple command-line application written in Java that allows users to manage their contacts. The application supports adding, displaying, and deleting contacts, with an additional feature of encrypting and decrypting the contact data using AES encryption.
 
 ## Features
 
-- Add a new contact with details such as name, phone number, email, and address.
-- Edit existing contacts.
-- Delete contacts from the list.
-- Search contacts by name or other fields.
-- View the complete list of saved contacts.
+- **Add Contact**: Add a contact with a name and phone number. The contact is encrypted before being saved.
+- **Display Contacts**: Display all the saved contacts by decrypting the contact information.
+- **Delete Contact**: (To be implemented) Remove a contact from the list after decrypting the stored data.
+- **Encryption**: All contact information is stored in an encrypted format using AES encryption for enhanced security.
 
 ## Technologies Used
 
-- **Java**: The core programming language for the application.
-- **Swing (Optional)**: For a graphical user interface (if applicable).
-- **File I/O**: Used for saving and retrieving contact data (if applicable).
+- **Java**: Core programming language.
+- **Java Cryptography Extension (JCE)**: Used for AES encryption and decryption of contact data.
+- **Serialization**: Used for storing and retrieving contact objects from a file.
 
-## Getting Started
+## Prerequisites
 
-### Prerequisites
+Before running the ContactManager14 application, make sure you have the following:
 
-Before running this application, ensure that you have the following installed:
+- **Java Development Kit (JDK)** version 8 or later installed.
+- A terminal or command-line interface (CLI) for running the program.
 
-- **Java Development Kit (JDK)** version 8 or later.
-- **Git** (for cloning the repository).
+## How to Run
 
-### Installation
+### 1. Clone the repository
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Kabilash01/ContactManager.git
+First, clone the repository to your local machine:
+
+```bash
+git clone https://github.com/Kabilash01/ContactManager.git
+cd ContactManager
