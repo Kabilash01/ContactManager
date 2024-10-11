@@ -31,3 +31,33 @@ First, clone the repository to your local machine:
 ```bash
 git clone https://github.com/Kabilash01/ContactManager.git
 cd ContactManager
+### ## How to Run
+
+### 2. Compile the Java files
+
+Navigate to the directory where the `ContactManager14.java` file is located and compile it using the following command:
+
+```bash
+javac ContactManager14.java
+### 3.Run the application
+After compiling the code, you can run the application with:
+```bash
+java ContactManager14
+
+###Project Structure
+ContactManager/
+│
+├── ContactManager14.java     # Main class with logic for managing contacts
+├── Contact.java              # Contact class representing contact information
+├── contacts.ser              # File where encrypted contacts are stored (generated after adding contacts)
+├── README.md                 # Project documentation
+└── .gitignore                # Ignore compiled class files and serialized data
+
+###Encryption
+The application uses AES (Advanced Encryption Standard) for encrypting and decrypting contact information before saving it to and retrieving it from the file contacts.ser. The encryption key is hardcoded in the program as *"secretKey1234567"*, but in a real-world application, you would use more secure key management practices.
+
+###To-Do
+Implement the Delete Contact functionality.
+Improve file handling to support multiple contacts in a single file.
+Enhance encryption key management to use secure and dynamic key generation.
+
